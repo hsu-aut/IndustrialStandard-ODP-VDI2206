@@ -15,7 +15,7 @@ This repository contains an ontology of a section of VDI guideline 2206 that con
  - [OPC UA](https://github.com/hsu-aut/IndustrialStandard-ODP-OPC-UA)
  - [ISO 22400-2](https://github.com/hsu-aut/IndustrialStandard-ODP-ISO22400-2)
 
-## VDI 3682 - Formalized Process Description
+## VDI 2206 - Abstract Model of System Structures
 The VDI 2206 (Design methodology for mechatronic systems) according to [1] contains concepts for the description of mechatronic systems
 and their containment structure. Hereby, the guideline defines necessary constituents of a mechatronic ssystem as well as a description
 on how they are related. Figure 1 shows the lightweight ontology of the VDI 2206.
