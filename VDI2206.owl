@@ -8,8 +8,9 @@
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.w3id.org/hsu-aut/VDI2206">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/hsu-aut/VDI2206/2.0.0"/>
-        <owl:versionInfo>2.0.0</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://www.w3id.org/hsu-aut/VDI2206/3.0.0"/>
+        <owl:versionInfo>3.0.0</owl:versionInfo>
+        <rdfs:comment>This ODP models Section 2.2 of VDI 2206:2004-06 (Design methodology for mechatronic systems): the basic structure of a mechatronic system (Section 2.2.1) and its modularization and hierarchization (Section 2.2.2). The guideline was reissued in November 2021 as VDI/VDE 2206 (Development of mechatronic and cyber-physical systems). That edition carries the basic structure forward unchanged in its Section 5.2, but replaces the hierarchy levels System, Module and Component by system, subsystem and system element, where a subsystem is itself a system and a system element may also be a service or a person. This ODP deliberately stays with the 2004 edition, whose three disjoint levels it models faithfully.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -277,17 +278,17 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#BasicSystem"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Component"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Energy"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Information"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Product"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Energy"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Information"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Product"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#BasicSystem"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/hsu-aut/VDI2206#Component"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
